@@ -34,9 +34,6 @@ public void run() {
         }
 }
 
-@Override
-public String toString() {
-	return "ClientRequestHandler [requestId=" + requestId + "]";
-}
+
 
 }
