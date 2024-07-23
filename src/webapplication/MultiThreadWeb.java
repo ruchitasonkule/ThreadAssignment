@@ -43,13 +43,6 @@ public class MultiThreadWeb {
 	        }
 	    }
 
-		@Override
-		public String toString() {
-			return "MultiThreadWebServer [threadPool=" + threadPool + ", threadPoolSize=" + threadPoolSize + ", isRunning="
-					+ isRunning + "]";
-		}
-
-	 
 	}
 
 
