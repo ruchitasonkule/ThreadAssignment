@@ -17,7 +17,7 @@ public int getRequestId() {
 
 @Override
 public void run() {
-	 Thread.currentThread().setPriority(Thread.NORM_PRIORITY); 
+	 Thread.currentThread().setPriority(Thread.MAX_PRIORITY); 
         try {
             
             System.out.println("Handling request :" + requestId + " on thread " + Thread.currentThread().getName());
