@@ -11,29 +11,9 @@ public class MultiThreadWeb {
 		private AtomicBoolean  isRunning ;
 		
 		public MultiThreadWeb(int threadPoolSize) {
-			super();
+			
 			this.threadPool = Executors.newFixedThreadPool(threadPoolSize);
 			this.threadPoolSize = threadPoolSize;
-		}
-
-		public ExecutorService getThreadPool() {
-			return threadPool;
-		}
-
-		public void setThreadPool(ExecutorService threadPool) {
-			this.threadPool = threadPool;
-		}
-
-		public AtomicBoolean getIsRunning() {
-			return isRunning;
-		}
-
-		public void setIsRunning(AtomicBoolean isRunning) {
-			this.isRunning = isRunning;
-		}
-
-		public int getThreadPoolSize() {
-			return threadPoolSize;
 		}
 
 		public void start() {
@@ -54,7 +34,7 @@ public class MultiThreadWeb {
 	            threadPool.shutdown(); 
 	            while (!threadPool.isTerminated()) {
 	                try {
-	                    Thread.sleep(100); 
+	                    Thread.sleep(1000); 
 	                } catch (InterruptedException e) {
 	                    e.printStackTrace();
 	                }
